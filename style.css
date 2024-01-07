@@ -1,0 +1,104 @@
+.container
+{
+    display: flex;
+    justify-content: center;
+    color: #F9FAF8;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+
+    min-height: 100vh;
+}
+
+.header, .footer
+{
+    display: flex;
+}
+
+.header
+{
+    background-color: #1F2937;
+    color: #F9FAF8;
+    justify-content: space-between;   
+}
+
+.left-links, .right-links
+{
+    display: flex;
+}
+
+.right-links
+{
+    gap: 8px;
+}
+
+.info
+{
+    background-color: #1F2937;
+    flex-direction: column;
+}
+
+.info h1
+{
+    color: #F9FAF8;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.info h2
+{
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.all-apps, .apps
+{
+    background-color: #FFFFFF;
+    color: #1F2937;
+    
+}
+
+.all-apps
+{
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote
+{
+    background-color: #E5E7EB;
+    color: #1F2937;
+    font-style: italic;
+    font-size: 36px;
+}
+
+.contacts
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3882F6;
+    color: #1F2937;
+}
+
+.footer
+{
+    justify-content: center;
+    margin-top: auto;
+}
+
+ul
+{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+a 
+{
+    text-decoration: none;
+}
