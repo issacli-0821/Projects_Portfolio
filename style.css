@@ -1,6 +1,6 @@
 *
 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .container
@@ -141,9 +141,14 @@ body
 .quote-section
 {
     background-color: #E5E7EB;
+}
+
+.quote-section .subtext
+{
     color: #1F2937;
     font-style: italic;
-    font-size: 36px;
+    font-size: 24px;
+    padding: 32px;
 }
 
 .contacts-section
