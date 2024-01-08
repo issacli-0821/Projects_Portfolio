@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     color: #F9FAF8;
+    padding: 10px 16px;
 }
 
 body
@@ -10,19 +11,20 @@ body
     display: flex;
     flex-direction: column;
     justify-items: flex-start;
-
+    margin: 0px;
     min-height: 100vh;
 }
 
 .header, .footer
 {
     display: flex;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    font-size: 16px;
 }
 
 .header
 {
-    background-color: #1F2937;
-    color: #F9FAF8;
     justify-content: space-between;   
 }
 
@@ -36,20 +38,20 @@ body
     gap: 8px;
 }
 
-.info
+.about
 {
     background-color: #1F2937;
     flex-direction: column;
 }
 
-.info h1
+.about h1
 {
     color: #F9FAF8;
     font-weight: bold;
     font-size: 48px;
 }
 
-.info h2
+.about h2
 {
     color: #E5E7EB;
     font-size: 18px;
@@ -101,4 +103,5 @@ ul
 a 
 {
     text-decoration: none;
+    color: #F9FAF8;
 }
