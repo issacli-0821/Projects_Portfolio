@@ -7,7 +7,7 @@
 {
     display: flex;
     justify-content: center;
-    padding: 10px 16px;
+    padding: 16px 24px;
 }
 
 .text
@@ -31,7 +31,7 @@ body
     min-height: 100vh;
 }
 
-.header-section, .footer-section
+.navbar, .footer-section
 {
     display: flex;
     background-color: #1F2937;
@@ -39,25 +39,38 @@ body
     font-size: 16px;
 }
 
-.header-section
+.navbar
 {
-    justify-content: space-between;   
+    /* justify-content: space-between; */
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 24px 0px;
 }
 
 .left-links, .right-links
 {
     display: flex;
+    margin-left: 24px;
 }
 
 .right-links
 {
-    gap: 12px;
+    gap: 2em;
+    margin-left: auto;
+    margin-right: 24px;
+}
+
+.nav-elements
+{
+    font-size: 20px;
 }
 
 .about-section
 {
     background-color: #1F2937;
     justify-content: space-between;
+    padding-top: 76px;
 }
 
 .left-about
@@ -113,6 +126,7 @@ body
 {
     padding: 24px;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 .app
