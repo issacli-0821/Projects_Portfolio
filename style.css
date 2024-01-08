@@ -7,8 +7,19 @@
 {
     display: flex;
     justify-content: center;
-    color: #F9FAF8;
     padding: 10px 16px;
+}
+
+.text
+{
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.subtext
+{
+    font-size: 18px;
+    text-align: center;
 }
 
 body
@@ -54,35 +65,25 @@ body
 {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 8px;
 }
 
-.text
-{
-    font-weight: bold;
-    font-size: 48px;
-}
-
-.subtext
-{
-    font-size: 18px;
-}
-
-.text .about-section
+.text.about
 {
     color: #F9FAF8;
 }
 
-.subtext .about-section
+.subtext.about
 {
     color: #E5E7EB;
+    text-align: left;
 }
 
 .sign-up
 {
     background-color: #3882F6;
     width: 100px;
-    padding: 6px 6px;
+    padding: 6px 6px; 
     color: #F9FAF8;
     font-weight: bold;
     border-radius: 10px;
@@ -105,6 +106,36 @@ body
 {
     flex-direction: column;
     align-items: center;
+    gap: 8px;
+}
+
+.apps
+{
+    padding: 24px;
+    gap: 40px;
+}
+
+.app
+{
+    flex-direction: column;
+    justify-content: space-between;
+    text-wrap: wrap;
+    width: 120px;
+    padding: 0px;
+}
+
+.app img
+{
+    border: 2px solid #3882F6;
+    border-radius: 10px;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 8px;
+}
+
+.app .subtext
+{
+    text-wrap: wrap;
 }
 
 .quote-section
