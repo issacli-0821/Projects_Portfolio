@@ -31,6 +31,7 @@ body
 .left-links, .right-links
 {
     display: flex;
+    /* padding: 8px; */
 }
 
 .right-links
@@ -41,20 +42,44 @@ body
 .about
 {
     background-color: #1F2937;
-    flex-direction: column;
+    justify-content: space-between;
 }
 
-.about h1
+.left-about
+{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#title-text
 {
     color: #F9FAF8;
     font-weight: bold;
     font-size: 48px;
 }
 
-.about h2
+#title-subtext
 {
     color: #E5E7EB;
     font-size: 18px;
+}
+
+.sign-up
+{
+    background-color: #3882F6;
+    width: 100px;
+    padding: 8px 6px;
+    color: #F9FAF8;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#headshot
+{
+    display: flex;
+    margin-bottom: 8px;
+    height: 200px;
 }
 
 .all-apps, .apps
