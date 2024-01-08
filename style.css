@@ -1,3 +1,8 @@
+*
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
 .container
 {
     display: flex;
@@ -15,7 +20,7 @@ body
     min-height: 100vh;
 }
 
-.header, .footer
+.header-section, .footer-section
 {
     display: flex;
     background-color: #1F2937;
@@ -23,7 +28,7 @@ body
     font-size: 16px;
 }
 
-.header
+.header-section
 {
     justify-content: space-between;   
 }
@@ -39,7 +44,7 @@ body
     gap: 8px;
 }
 
-.about
+.about-section
 {
     background-color: #1F2937;
     justify-content: space-between;
@@ -52,24 +57,32 @@ body
     gap: 4px;
 }
 
-#title-text
+.text
 {
-    color: #F9FAF8;
     font-weight: bold;
     font-size: 48px;
 }
 
-#title-subtext
+.subtext
+{
+    font-size: 18px;
+}
+
+.text .about-section
+{
+    color: #F9FAF8;
+}
+
+.subtext .about-section
 {
     color: #E5E7EB;
-    font-size: 18px;
 }
 
 .sign-up
 {
     background-color: #3882F6;
     width: 100px;
-    padding: 8px 6px;
+    padding: 6px 6px;
     color: #F9FAF8;
     font-weight: bold;
     border-radius: 10px;
@@ -82,20 +95,19 @@ body
     height: 200px;
 }
 
-.all-apps, .apps
+.apps-section, .apps
 {
     background-color: #FFFFFF;
     color: #1F2937;
-    
 }
 
-.all-apps
+.apps-section
 {
     flex-direction: column;
     align-items: center;
 }
 
-.quote
+.quote-section
 {
     background-color: #E5E7EB;
     color: #1F2937;
@@ -103,7 +115,7 @@ body
     font-size: 36px;
 }
 
-.contacts
+.contacts-section
 {
     display: flex;
     flex-direction: column;
@@ -112,7 +124,7 @@ body
     color: #1F2937;
 }
 
-.footer
+.footer-section
 {
     justify-content: center;
     margin-top: auto;
