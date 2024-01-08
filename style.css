@@ -47,12 +47,11 @@ body
 .left-links, .right-links
 {
     display: flex;
-    /* padding: 8px; */
 }
 
 .right-links
 {
-    gap: 8px;
+    gap: 12px;
 }
 
 .about-section
@@ -107,6 +106,7 @@ body
     flex-direction: column;
     align-items: center;
     gap: 8px;
+    padding: 24px;
 }
 
 .apps
@@ -151,13 +151,42 @@ body
     padding: 32px;
 }
 
-.contacts-section
+.contact-section
 {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #3882F6;
     color: #1F2937;
+    gap: 16px;
+    padding: 24px;
+}
+
+.contact-info
+{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.contact-info-row
+{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #F9FAF8;
+}
+
+.contact-info-row img
+{
+    width: 30px;
+    height: auto;
+}
+
+.contact-info-row a
+{
+    font-weight: bold;
 }
 
 .footer-section
