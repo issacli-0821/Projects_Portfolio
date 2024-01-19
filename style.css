@@ -89,6 +89,7 @@ body
 {
     color: #E5E7EB;
     text-align: left;
+    margin-right: 40px;
 }
 
 .sign-up
@@ -130,7 +131,7 @@ body
     flex-wrap: wrap;
 }
 
-.projects
+.project
 {
     flex-direction: column;
     justify-content: space-between;
@@ -139,7 +140,7 @@ body
     padding: 0px;
 }
 
-.projects img
+.project img
 {
     border: 2px solid #3882F6;
     border-radius: 10px;
@@ -148,7 +149,7 @@ body
     margin-bottom: 8px;
 }
 
-.projects .subtext
+.project .subtext
 {
     text-wrap: wrap;
 }
