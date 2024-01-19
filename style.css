@@ -111,7 +111,7 @@ body
 
 .projects-section, .projects
 {
-    background-color: #FFFFFF;
+    background-color: #E5E7EB;
     color: #1F2937;
 }
 
@@ -196,8 +196,11 @@ body
 
 .contact-info-row img
 {
-    width: 30px;
-    height: auto;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    padding: 2px;
+    border-radius: 50%;
 }
 
 .contact-info-row a
