@@ -142,11 +142,16 @@ body
 
 .project img
 {
-    border: 2px solid #3882F6;
+    border: 4px solid #3882F6;
     border-radius: 10px;
     width: 120px;
     height: 120px;
     margin-bottom: 8px;
+}
+
+.project img:hover
+{
+    border: 4px solid #3073D0;
 }
 
 .project .subtext
