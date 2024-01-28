@@ -6,27 +6,23 @@ resetButton.addEventListener("click", resetGrid);
 
 let RANDOMIZED_COLOR = false;
 let ERASER = false;
-let STANDARD_COLOR = true;
 
 const standardButton = document.querySelector("#standard");
 standardButton.addEventListener("click", () => {
     RANDOMIZED_COLOR = false; 
     ERASER = false;
-    STANDARD_COLOR = true;
 });
 
 const randomButton = document.querySelector("#random");
 randomButton.addEventListener("click", () => {
     RANDOMIZED_COLOR = true; 
     ERASER = false;
-    STANDARD_COLOR = false;
 });
 
 const eraserButton = document.querySelector("#eraser");
 eraserButton.addEventListener("click", () => {
     RANDOMIZED_COLOR = false; 
     ERASER = true;
-    STANDARD_COLOR = false;
 });
 
 /* Adds a square of size squareSize by squareSize to the main grid */
@@ -40,7 +36,7 @@ function generateSquare(squareSize)
     grid.appendChild(square);
 }
 
-/* Generates squaresPerSide^2 squares for the main grid. Returns nothing */
+/* Generates squaresPerSide^2 squares for the main grid */
 function createSquares(squaresPerSide)
 {
     let squareSize = `${GRIDSIZE / squaresPerSide}px`;
@@ -53,6 +49,7 @@ function createSquares(squaresPerSide)
     }
 }
 
+/* Regenerates grid based on user input */
 function resetGrid()
 {
     let squaresPerSide = Math.min(parseInt(prompt("Enter the size of your new grid")), 100);
@@ -60,6 +57,7 @@ function resetGrid()
     createSquares(squaresPerSide);
 }
 
+/* Returns a string corresponding to the color based on RANDOMIZED_COLOR and ERASER */
 function getColor()
 {
     if (RANDOMIZED_COLOR) return "#" + getRandomRGBValue() + getRandomRGBValue() + getRandomRGBValue();
@@ -67,6 +65,7 @@ function getColor()
     return "blue";
 }
 
+/* Returns a number between 0 and 255 in the form of a hex string */
 function getRandomRGBValue()
 {
     return Math.floor(Math.random() * 255).toString(16);
