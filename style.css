@@ -290,4 +290,11 @@ button.technology
 .experience .text
 {
     font-size: 24px;
+    text-justify: center;
+}
+
+.experience .subtext
+{
+    font-size: 24px;
+    text-justify: center;
 }
