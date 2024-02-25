@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "rps_script.js" defer> </script>
+    <link rel = "stylesheet" href = "rps_style.css">
+</head>
+<body>
+    <div class = "container title-section">  
+        <div class = "text">
+            Rock Paper Scissors
+        </div>
+    </div>
+
+    <div class = "container game-section"> 
+        <div class = "container buttons-section">
+            <button>
+                <img class = "selection" id = "rock" src = "img/Rock.png" alt = "Image of rock">
+            </button>
+            <button>
+                <img class = "selection" id = "paper" src = "img/Paper.png" alt = "Image of paper">
+            </button>
+            <button>
+                <img class = "selection" id = "scissors" src = "img/Scissors.png" alt = "Image of scissors">
+            </button>
+        </div>
+
+        <div class = "container result-section"> 
+            <div class = "subtext" id = "instructions"> The game will end when one side reaches 5 points. </div>
+            <div class = "subtext" id = "round-result"> </div>
+            <div class = "subsubtext" id = "scoreboard">
+                <div class = "underline"> Current score </div>
+                <div id = "computer-score"> Computer score: 0 </div>
+                <div id = "player-score"> Player score: 0 </div>
+            </div>
+        </div>
+
+        <div class = "container buttons-section">
+            <img src = "img/Rock.png" alt = "Image of rock">
+            <img src = "img/Paper.png" alt = "Image of paper">
+            <img src = "img/Scissors.png" alt = "Image of scissors">
+        </div>
+    </div>
+
+    <div class = "modal">
+        <div class = "modal-content">
+            <span class= "close"> &times; </span>
+            <div class = "container modal-text">
+                <p class = "subtext"> Some text </p>
+                <button id = "play-again"> Play again! </button>
+            </div>
+        </div>
+    </div>
+        
+</body>
+</html>
